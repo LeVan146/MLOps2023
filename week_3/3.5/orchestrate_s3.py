@@ -141,8 +141,8 @@ def main_flow_s3(
     mlflow.set_experiment("nyc-taxi-experiment")
 
     # Load
-    # s3_bucket_block = S3Bucket.load("s3-bucket-block")
-    # s3_bucket_block.download_folder_to_path(from_folder="data", to_folder="data")
+    s3_bucket_block = S3Bucket.load("s3-bucket-example")
+    s3_bucket_block.download_folder_to_path(from_folder="dataset", to_folder="dataset")
 
     df_train = read_data(train_path)
     df_val = read_data(val_path)
