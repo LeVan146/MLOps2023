@@ -1,0 +1,26 @@
+deployments:
+- name: taxi_local_data
+  version: null
+  tags: []
+  description: null
+  schedule: {}
+  flow_name: null
+  entrypoint: week_3/3.3/orchestrate.py:main_flow
+  parameters: {}
+  work_pool:
+    name: mlops
+    work_queue_name: null
+    job_variables: {}
+
+- name: taxi_cloud_data
+  version: null
+  tags: []
+  description: null
+  schedule: {}
+  flow_name: null
+  entrypoint: week_3/3.5/orchestrate_s3.py:main_flow_s3
+  parameters: {}
+  work_pool:
+    name: mlops
+    work_queue_name: null
+    job_variables: {}

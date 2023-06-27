@@ -1,0 +1,4 @@
+{
+  "main-flow": "week_3/3.3/orchestrate.py:main_flow",
+  "main-flow-s3": "week_3/3.5/orchestrate_s3.py:main_flow_s3"
+}
