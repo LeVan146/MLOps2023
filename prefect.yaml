@@ -12,5 +12,9 @@ push: null
 
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
-- prefect.projects.steps.set_working_directory:
-    directory: /Users/lap02105/workking_space/learn_mlops
+# - prefect.projects.steps.set_working_directory:
+#     directory: /Users/lap02105/workking_space/learn_mlops
+- prefect.projects.steps.git_clone_project:
+    repository: https://github.com/LeVan146/MLOps2023.git
+    branch: main
+    access_token: null
