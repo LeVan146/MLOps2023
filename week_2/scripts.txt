@@ -1,1 +1,3 @@
 mlflow ui --backend-store-uri sqlite:///mlflow.db
+
+prefect worker start -p mlops -t process

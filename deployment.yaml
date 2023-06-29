@@ -1,24 +1,37 @@
 deployments:
-- name: taxi_local_data
-  version: null
-  tags: []
-  description: null
-  schedule: {}
-  flow_name: null
-  entrypoint: week_3/3.3/orchestrate.py:main_flow
-  parameters: {}
-  work_pool:
-    name: mlops
-    work_queue_name: null
-    job_variables: {}
+# - name: taxi_local_data
+#   version: null
+#   tags: []
+#   description: null
+#   schedule: {}
+#   flow_name: null
+#   entrypoint: week_3/3.3/orchestrate.py:main_flow
+#   parameters: {}
+#   work_pool:
+#     name: mlops
+#     work_queue_name: null
+#     job_variables: {}
 
-- name: taxi_cloud_data
+# - name: taxi_cloud_data
+#   version: null
+#   tags: []
+#   description: null
+#   schedule: {}
+#   flow_name: null
+#   entrypoint: week_3/3.5/orchestrate_s3.py:main_flow_s3
+#   parameters: {}
+#   work_pool:
+#     name: mlops
+#     work_queue_name: null
+#     job_variables: {}
+
+- name: taxi_cloud_data_week_4
   version: null
   tags: []
   description: null
   schedule: {}
   flow_name: null
-  entrypoint: week_3/3.5/orchestrate_s3.py:main_flow_s3
+  entrypoint: week_4/web-service-mlflow/rain_forest_prefect_cloud.py:main_flow_week_4_s3
   parameters: {}
   work_pool:
     name: mlops
