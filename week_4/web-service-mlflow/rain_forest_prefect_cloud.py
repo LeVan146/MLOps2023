@@ -92,7 +92,7 @@ def train_best_model(
         print(params, rmse)
         mlflow.log_metric('rmse', rmse)
 
-        mlflow.sklearn.log_model(pipeline, artifact_path="model")
+        # mlflow.sklearn.log_model(pipeline, artifact_path="model")
 
         pathlib.Path("models").mkdir(exist_ok=True)
         # with open("models/preprocessor.b", "wb") as f_out:
