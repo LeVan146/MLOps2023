@@ -164,6 +164,7 @@ def main_flow_week_4_s3(
     # Load
     s3_bucket_block = S3Bucket.load("s3-bucket-example")
     s3_bucket_block.download_folder_to_path(from_folder="dataset", to_folder="dataset")
+    s3_bucket_block.download_folder_to_path(from_folder="models", to_folder="models")
 
     # df_train = read_data(train_path)
     # df_val = read_data(val_path)
